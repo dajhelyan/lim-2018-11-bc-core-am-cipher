@@ -12,20 +12,20 @@ window.cipher = {
       // console.log(letra_cif);
     }
     return msg;
-    // msg = ''
-    // nombre = 'laika'
-    // for(var i = 0; i < nombre.length; i++){
-    //   msg = msg + nombre[i];
-    // }
-    // console.log(msg)
+
   },
 
   decode: function(offset, string) {
-    let msg_descifrar = '';
-    for(let i = 0; i < String.length; i++){
-      const codigo = (string[index].charCodeAt(0) - 65 - offset) % 26 + 65
-      alert("");
+    let msg_decifrar = '';
+    for(let i = 0; i < string.length; i++){
+      const codigo = (string[i].charCodeAt(0) + 65 - offset) % 26 + 65
+      if (codigo < 65 ){
+        codigo = codigo + 26;
+      } 
+      let letra_des = String.fromCharCode(codigo);
+      msg_decifrar = msg_decifrar + letra_des;
     }
+    return msg_decifrar
     console.log(string)
   }
 
