@@ -11,8 +11,8 @@
       <h1>Secretitos entre amiguitos</h1>
       <section class="container">
       <div class="ancho-50">
-        <h2>¿Que es el cifrado césar?</h2>
-       <div class="text-container">
+        <div class="text-container">
+          <h2>¿Que es el cifrado césar?</h2>
          <p>        Cifrar significa codificar. El cifrado César es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
             y ahora tú tambien podras cifrar tus mensajes como el emperador Julio César.</p>
 
@@ -21,20 +21,20 @@
       <div class="ancho-50">
         <div class="text-container">
           <h2>¿Como funciona?</h2>
-          <p>El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (tu codigo secreto) más adelante en el mismo alfabeto.Por ejemplo, si usamos un desplazamiento (tu codigo secreto) de 3 posiciones:
-            <ul>
-              <li>La letra A se cifra como D.</li>
-              <li> palabra CASA se cifra como FDVD.</li>
-              <li> sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
-              <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
-            </ul>
-          </p>
+            <p>El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (tu codigo secreto) más adelante en el mismo alfabeto.Por ejemplo, si usamos un desplazamiento (tu codigo secreto) de 3 posiciones:
+              <ul>
+               <li>La letra A se cifra como D.</li>
+               <li> palabra CASA se cifra como FDVD.</li>
+               <li> sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
+               <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
+              </ul>
+            </p>
           <button id="comenzar" type="button">comenzar</button>
         </div>   
       </div>
   </div>
   <div class="ocultar" id = "cifrado">
-     <div>
+    <div>
       <h2>Selecciona tu codigo secreto:</h2>
       <form>
         <select id="offset"> 
@@ -55,18 +55,19 @@
     </div>
     </form>
     <div>
-    <h3>Ingresa tu mensaje:</h3>
-    <div id="root"></div>
+      <h3>Ingresa tu mensaje:</h3>
+      <div id="root"></div>
      <form>
       <textarea name="msg_cifrar" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje aqui..."></textarea>
      </form>
       <button id='cifrar'>Cifrar</button>
       <button id='decifrar'>Decifrar</button>
-    <form action="">
-     <h3>Tu mensaje es:</h3>
-     <textarea name="msg_decifrado" id="resultado" cols="30" rows="10" placeholder="Tu mensaje es..."></textarea>
-    </form>
-  </div>
+     <form action="">
+       <h3>Tu mensaje es:</h3>
+       <textarea name="msg_decifrado" id="resultado" cols="30" rows="10" placeholder="Tu mensaje es..."></textarea>
+     </form>
+      <button id="volver" type="button">volver</button>
+    </div>
    
 
     <p id='resultado'></p>

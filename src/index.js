@@ -4,13 +4,21 @@ const input = document.getElementById('mensaje');
 const resultado = document.getElementById('resultado');
 const button_comenzar = document.getElementById('comenzar')
 const cifrado = document.getElementById('cifrado')
-const bienvenida = docuement.getElementById('bienvenida')
+const bienvenida = document.getElementById('bienvenida')
+const button_volver = document.getElementById('volver') 
 
 const click_button_comenzar = function(){
   cifrado.classList.add("mostrar");
   cifrado.classList.remove("ocultar");
-  //bienvenida.classList.add("ocultar");
-  //bienvenida.classList.remove("mostrar");
+  bienvenida.classList.add("ocultar");
+  bienvenida.classList.remove("mostrar");
+}
+
+const click_button_volver = function(){
+  cifrado.classList.add("ocultar");
+  cifrado.classList.remove("mostrar");
+  bienvenida.classList.add("mostrar")
+  bienvenida.classList.remove("ocultar")
 }
 
 
@@ -36,3 +44,4 @@ const click_button_decifrado = function(){
 button_cifrado.addEventListener('click', click_button_cifrado);
 button_decifrado.addEventListener('click', click_button_decifrado);
 button_comenzar.addEventListener('click', click_button_comenzar);
+button_volver.addEventListener('click', click_button_volver);
