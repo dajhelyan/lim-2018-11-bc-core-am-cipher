@@ -1,24 +1,20 @@
+body{
+    background-image: url(../img/fondo1.jpg);
+    width: 100% 100%;
+}
 h1{
     font-family: 'Press Start 2P', cursive;
     text-align: center
 } 
-
 h2{
     font-family: 'Contrail One', cursive;
     text-align: center
     
 }
-
 p{
     font-family: 'Arima Madurai', cursive;
     text-align: center
 }
-
-.text-container {
-    
-      
-}
-
 .ancho-50{
     width: 48%;
     display: inline-block
@@ -28,4 +24,9 @@ p{
 }
 .mostrar{
     display: block;
+}
+.form{
+    padding: 10px;
+    margin-right:500px;
+    margin-left: 500px;
 }
