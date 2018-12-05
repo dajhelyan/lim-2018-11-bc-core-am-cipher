@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Contrail+One|Press+Start+2P" rel="stylesheet">
   </head>
   <body>
-    <main>
     <section id="bienvenida" class="seccion-home mostrar">
       <h1 class="title-primary">Secretitos entre amiguitos</h1>
       <div class="container">
@@ -21,22 +20,24 @@
                 batalla.y ahora tú tambien podras cifrar tus mensajes como el emperador Julio César.</p>
             </div>
           </div>
+        </div>
           <div class="col-md-6">
             <div class="text-container">
               <h2 class="subtitle-second">¿Como funciona?</h2>
-              <p>El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por
-                sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un
-                número fijo de posiciones (tu codigo secreto) más adelante en el mismo alfabeto.Por ejemplo, si usamos un
-                desplazamiento (tu codigo secreto) de 3 posiciones:
+              <div>
+                <p>El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por
+                    sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un
+                    número fijo de posiciones (tu codigo secreto) más adelante en el mismo alfabeto.Por ejemplo, si usamos un
+                    desplazamiento (tu codigo secreto) de 3 posiciones:</p> 
                 <ul class="list-instruction">
                   <li>La letra A se cifra como D.</li>
                   <li>palabra CASA se cifra como FDVD.</li>
                   <li>sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
                   <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
                 </ul>
-            </div>
-          </div>
-        </div>
+               </div>
+             </div>
+           </div>
         <div class="star text-center">
           <button class="star" id="comenzar" type="button">comenzar</button>
         </div>
@@ -47,8 +48,7 @@
         <div class="header-title text-center">
           <h2 class="cipher xtext-center">Selecciona tu codigo secreto:</h2>
         </div>
-        <section class="me
-          ssage">
+        <section class="message">
           <form class="form">
             <select id="offset">
               <option value="1">1</option>
@@ -65,21 +65,18 @@
               <option value="12">12</option>
             </select>
           </form>
-        </section>
+    </section>
       </div>
       <form class="fomr-code">
-        <div class="form">
-          <h3>Ingresa tu mensaje:</h3>
-          <div id="root">
-          </div>
+        <h3>Ingresa tu mensaje:</h3>
       </form>
       <div class="form-medium">
         <form>
           <textarea class="mensaje" name="msg_cifrar" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje aqui..."></textarea>
         </form>
         <form>
-          <button id='cifrar'  type="button">Cifrar</button>
-          <button id='decifrar'  type="button">Decifrar</button>
+          <button id="cifrar"  type="button">Cifrar</button>
+          <button id="decifrar"  type="button">Decifrar</button>
         </form>
         <form action="">
           <h3>Tu mensaje es:</h3>
@@ -88,10 +85,7 @@
         <button id="volver" type="button">volver</button>
       </div>
     </section>
-    <p id='resultado'></p>
-
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </main>
   </body>
 </html>

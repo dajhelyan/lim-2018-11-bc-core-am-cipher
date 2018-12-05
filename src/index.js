@@ -1,11 +1,11 @@
 const button_cifrado = document.getElementById('cifrar');
-const button_decifrado = document.getElementById('decifrar')
+const button_decifrado = document.getElementById('decifrar');
 const input = document.getElementById('mensaje');
 const resultado = document.getElementById('resultado');
-const button_comenzar = document.getElementById('comenzar')
-const cifrado = document.getElementById('cifrado')
-const bienvenida = document.getElementById('bienvenida')
-const button_volver = document.getElementById('volver')
+const button_comenzar = document.getElementById('comenzar');
+const cifrado = document.getElementById('cifrado');
+const bienvenida = document.getElementById('bienvenida');
+const button_volver = document.getElementById('volver');
 
 const click_button_comenzar = () => {
   cifrado.classList.add("mostrar");
@@ -25,7 +25,6 @@ const click_button_volver = () => {
 const click_button_cifrado = () => {
   const offset = parseInt(document.getElementById('offset').value);
   const msg = input.value;
-
   const mensaje_cifrado = cipher.encode(offset, msg);
   resultado.innerHTML = mensaje_cifrado;
 }
