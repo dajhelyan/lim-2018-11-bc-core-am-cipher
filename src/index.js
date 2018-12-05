@@ -5,36 +5,34 @@ const resultado = document.getElementById('resultado');
 const button_comenzar = document.getElementById('comenzar')
 const cifrado = document.getElementById('cifrado')
 const bienvenida = document.getElementById('bienvenida')
-const button_volver = document.getElementById('volver') 
+const button_volver = document.getElementById('volver')
 
-const click_button_comenzar = function(){
+const click_button_comenzar = () => {
   cifrado.classList.add("mostrar");
   cifrado.classList.remove("ocultar");
   bienvenida.classList.add("ocultar");
   bienvenida.classList.remove("mostrar");
 }
 
-const click_button_volver = function(){
+const click_button_volver = () => {
   cifrado.classList.add("ocultar");
   cifrado.classList.remove("mostrar");
-  bienvenida.classList.add("mostrar")
-  bienvenida.classList.remove("ocultar")
+  bienvenida.classList.add("mostrar");
+  bienvenida.classList.remove("ocultar");
 }
 
 
-const click_button_cifrado = function(){
-  console.log('hiciste click en cifrar');
+const click_button_cifrado = () => {
   const offset = parseInt(document.getElementById('offset').value);
   const msg = input.value;
 
- const mensaje_cifrado = cipher.encode(offset, msg);
- resultado.innerHTML = mensaje_cifrado;
+  const mensaje_cifrado = cipher.encode(offset, msg);
+  resultado.innerHTML = mensaje_cifrado;
 }
 
 
-const click_button_decifrado = function(){
-  console.log('hiciste click en decifrar');
-  const offset = parseInt(document.getElementById('offset').value)
+const click_button_decifrado = () => {
+  const offset = parseInt(document.getElementById('offset').value);
   const msg_decifrado = input.value;
 
   const mensaje_decifrado = cipher.decode(offset, msg_decifrado);

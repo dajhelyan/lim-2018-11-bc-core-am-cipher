@@ -1,32 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 body{
-    background-image: url(../img/fondo1.jpg);
-    width: 100% 100%;
+    background-image: url(../img/fondo3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    font-family:  'Patrick Hand', cursive !important;
 }
-h1{
-    font-family: 'Press Start 2P', cursive;
-    text-align: center
-} 
-h2{
-    font-family: 'Contrail One', cursive;
-    text-align: center
-    
-}
-p{
-    font-family: 'Arima Madurai', cursive;
-    text-align: center
-}
-.ancho-50{
-    width: 48%;
-    display: inline-block
-}
+
 .ocultar{
-    display:none;
+    display: none;
 }
+
 .mostrar{
     display: block;
 }
-.form{
+
+.title-primary {
+    font-size: 30px;
+    color: #000;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center
+}
+
+.subtitle-second {
+    font-size: 25px;
+    color: white; 
+    text-align: center
+}
+
+.seccion-home{
+    padding-top:50px;
+}
+
+.info-home{
+    padding-top: 50px;
+}
+
+.list-instruction{
+    color: white;
+    text-shadow
+
+
+}
+.text-container{
+    font-size: 18px;
+    color: white; 
+    text-shadow: -1px 0 #06D, 0 1px #10E, 1px 0 #00A, 0 -1px #07F
+}
+
+.star button{
+    background-color: aquamarine;
+    border: 0;
+    border-radius: 30px;
+    width: 200px;
+    margin: auto;
     padding: 10px;
-    margin-right:500px;
-    margin-left: 500px;
+}
+
+form #offset {
+    border: 0;
+    background-color: white;
+    outline: none;
+    border-radius: 16px;
+    padding: 10px;
+    width: 100px;
+}
+
+.cipher{
+  color: #000;
+}
+
+.form-medium{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.mensaje {
+    text-align:center;
+    width: 378px;
+    padding: 16px;
+    height: 170px;
+    background-color: #f5f5f5d6;
+    border-radius: 32px;
+}
+
+.resultado {
+    text-align:center;
+    width: 378px;
+    padding: 16px;
+    height: 170px;
+    background-color: #f5f5f5d6;
+    border-radius: 32px;
 }
